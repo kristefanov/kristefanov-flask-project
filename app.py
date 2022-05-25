@@ -42,7 +42,8 @@ def delete(id):
         return redirect('/')
     except:
         return 'There was a problem deleting that task'
-
+#this is a comment
+#tgus us a second comment
 @app.route('/update/<int:id>', methods=['GET', 'POST'])
 def update(id):
     task = Todo.query.get_or_404(id)
